@@ -1,11 +1,6 @@
 @import "./assets/scss/variables";
 @import "./assets/scss/main";
 
-@media (any-hover: hover) {
-
-}
-
-
 *, *:after, *:before {
   margin:     0;
   padding:    0;
@@ -37,32 +32,29 @@ body, html {
 }
 
 html {
-  font-size: 16px;
-  //font-family: Avenir, sans-serif;
+  font-size:   16px;
+  font-family: Popins, sans-serif;
 }
 
 h1 {
   //font-size:     3.75rem;
   //line-height:   1.116;
-  //font-family:   'Roboto Slab', sans-serif;
   //font-weight:   100;
   //margin-bottom: 3rem;
 }
 
 h2 {
   //font-size:     3rem;
-  //font-family:   'Roboto Slab', sans-serif;
   //font-weight:   300;
   //line-height:   1.3125;
   //margin-bottom: 1rem;
 }
 
 h3 {
-  //font-size:     2.25rem;
-  //font-family:   'Roboto Slab', sans-serif;
-  //font-weight:   200;
-  //line-height:   2.68;
-  //margin-bottom: 1.625rem;
+  font-size:     16px;
+  font-weight:   600;
+  line-height:   1.28;
+  margin-bottom: 4px;
 }
 
 h4 {
@@ -70,18 +62,15 @@ h4 {
   font-weight:   600;
   line-height:   1.28;
   margin-bottom: 4px;
-  //font-family:   'Roboto Slab', sans-serif;
 }
 
 h5 {
   //font-size:   1.125rem;
-  //font-family: 'Roboto Slab', sans-serif;
   //font-weight: 300;
   //line-height: 1.33;
 }
 
 p {
-  //font-family:   Avenir, sans-serif;
   font-weight:   400;
   font-size:     12px;
   line-height:   1.5;
@@ -92,7 +81,6 @@ p {
 input, textarea, select {
   width:            100%;
   border:           0.0625rem solid #E4E8EB;
-  //font-family:      Avenir, sans-serif;
   padding:          1rem;
   font-size:        0.875rem;
   line-height:      1.36;
@@ -122,11 +110,30 @@ iframe {
 button {
   cursor:      pointer;
   font-size:   1rem;
-  line-height: 1.375rem;
-  //font-family: Avenir, sans-serif;
-  font-weight: 500;
+  line-height: 1;
+  font-weight: 600;
 }
 
+.btn {
+  border:          none;
+  padding:         6px;
+  border-radius:   3px;
+  background:      #1055E0;
+  min-width:       76px;
+  box-shadow:      0 1px 2px rgba(0, 0, 0, 0.06);
+  font-size:       11px;
+  display:         inline-flex;
+  text-align:      center;
+  justify-content: center;
+  transition:      .2s linear;
+  &:hover, &:active {
+    opacity: .7;
+  }
+  &-second {
+    background: #303236;
+    color:      #9DA3AA;
+  }
+}
 
 .no-scroll {
   overflow: hidden;
@@ -138,9 +145,9 @@ button {
 
 .container {
   width:     100%;
-  max-width: 1300px;
+  max-width: 1040px;
   margin:    0 auto;
-  padding:   0 3rem;
+  padding:   0 15px;
 }
 
 .d-block {
@@ -149,41 +156,4 @@ button {
 
 .d-flex {
   display: flex !important;
-}
-
-
-@media screen and (max-width: 992px) {
-  h3 {
-    font-size:   1.5rem;
-    line-height: 1.33;
-  }
-  h4 {
-    font-size:   1.5rem;
-    line-height: 1.33;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  h1 {
-    font-size:   2.5rem;
-    line-height: 1.15;
-  }
-  h2 {
-    font-size:     2.25rem;
-    line-height:   1.33;
-    margin-bottom: 0.5rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.25rem;
-  }
-  p {
-    font-size:   0.875rem;
-    line-height: 1.83;
-  }
-  .container {
-    padding: 0 1.2rem;
-  }
 }
