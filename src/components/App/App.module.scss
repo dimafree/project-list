@@ -8,5 +8,11 @@
 main {
   width:       100%;
   flex:        1 0 auto;
-  padding-top: 50px;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 566.98px) {
+  main {
+    padding-top: 122px;
+  }
 }

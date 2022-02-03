@@ -2,11 +2,12 @@
 @import "./assets/scss/main";
 
 *, *:after, *:before {
-  margin:     0;
-  padding:    0;
-  box-sizing: border-box;
-  outline:    none;
-  color:      #D4DAE0;
+  margin:      0;
+  padding:     0;
+  box-sizing:  border-box;
+  outline:     none;
+  color:       #D4DAE0;
+  font-family: Popins, sans-serif;
 }
 
 img {
@@ -23,6 +24,10 @@ a {
   cursor:          pointer;
   font-size:       1.125rem;
   line-height:     1.39;
+  transition:      .2s linear;
+  &:hover, &:active {
+    opacity: .7;
+  }
 }
 
 body, html {
@@ -32,23 +37,9 @@ body, html {
 }
 
 html {
-  font-size:   16px;
-  font-family: Popins, sans-serif;
+  font-size: 16px;
 }
 
-h1 {
-  //font-size:     3.75rem;
-  //line-height:   1.116;
-  //font-weight:   100;
-  //margin-bottom: 3rem;
-}
-
-h2 {
-  //font-size:     3rem;
-  //font-weight:   300;
-  //line-height:   1.3125;
-  //margin-bottom: 1rem;
-}
 
 h3 {
   font-size:     16px;
@@ -64,39 +55,43 @@ h4 {
   margin-bottom: 4px;
 }
 
-h5 {
-  //font-size:   1.125rem;
-  //font-weight: 300;
-  //line-height: 1.33;
-}
-
 p {
   font-weight:   400;
   font-size:     12px;
-  line-height:   1.5;
+  line-height:   1.28;
   margin-bottom: 12px;
   color:         #9DA3AA;
 }
 
 input, textarea, select {
   width:            100%;
-  border:           0.0625rem solid #E4E8EB;
-  padding:          1rem;
-  font-size:        0.875rem;
+  border:           1px solid #3C3E41;
+  padding:          8px 12px;
+  font-size:        12px;
   line-height:      1.36;
-  color:            $blackColor;
-  box-shadow:       none;
+  color:            #9DA3AA;
   background-color: transparent;
+  box-shadow:       0 1px 2px rgba(0, 0, 0, 0.06);
+  transition:       .2s linear;
+  min-width:        236px;
   &::placeholder {
     color: #728387;
   }
   &:hover, &:focus {
-    border: 0.0625rem solid $blackColor;
+    border: 1px solid #fff;
   }
 }
 
 textarea {
   margin: 0.25rem 0 1.5rem 0;
+}
+
+select {
+  cursor: pointer;
+  transition:       .2s linear;
+  &:active, &:hover {
+    opacity: .7;
+  }
 }
 
 iframe {

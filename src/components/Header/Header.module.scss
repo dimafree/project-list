@@ -1,0 +1,92 @@
+.header {
+  padding:       24px 0;
+  border-bottom: 1px solid #303236;
+  position:      fixed;
+  z-index:       10;
+  left:          0;
+  top:           0;
+  width:         100%;
+  background:    #1F2023;
+  .content {
+    display:         flex;
+    align-items:     center;
+    justify-content: flex-start;
+    .logo {
+      width:   41px;
+      display: flex;
+    }
+    select {
+      width:       auto;
+      border:      none;
+      min-width:   130px;
+      font-size:   11px;
+      font-weight: 600;
+    }
+    .info {
+      margin-left:     auto;
+      display:         flex;
+      align-items:     center;
+      justify-content: flex-end;
+      .helpInfo {
+        display: flex;
+        width:   16px;
+      }
+      .status {
+        display:      flex;
+        width:        32px;
+        border-left:  2px solid #303236;
+        padding-left: 8px;
+        margin-left:  8px;
+        position:     relative;
+        &:before {
+          content:       '';
+          position:      absolute;
+          top:           0;
+          right:         0;
+          border:        2px solid #1F2023;
+          width:         10px;
+          height:        10px;
+          background:    #FC574F;
+          border-radius: 50%;
+        }
+      }
+      .avatar {
+        display:     flex;
+        width:       26px;
+        height:      26px;
+        margin-left: 18px;
+        position:    relative;
+        .avatarImage {
+          border-radius: 50%;
+          overflow:      hidden;
+        }
+        &:before {
+          content:       '';
+          position:      absolute;
+          right:         0;
+          bottom:        0;
+          border:        2px solid #1F2023;
+          width:         10px;
+          height:        10px;
+          background:    #07BC7A;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 566.98px) {
+  .header {
+    padding: 12px 0;
+    .content {
+      flex-direction: column;
+      .logo {
+        margin-bottom: 8px;
+      }
+      .info {
+        margin: 8px auto 0 auto;
+      }
+    }
+  }
+}
