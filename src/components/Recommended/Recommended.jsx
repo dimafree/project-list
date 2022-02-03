@@ -39,8 +39,8 @@ export const Recommended = () => {
           </div>
         </div>
         <div className={styles.items}>
-          {items.map(item => (
-            <a href={"#"} className={styles.item}>
+          {items.map((item, index) => (
+            <div key={index} className={styles.item}>
               <div className={styles.image}>
                 <div className={styles.cover}>
                   <a href={"#"} className='btn' type='button'>Use</a>
@@ -55,7 +55,7 @@ export const Recommended = () => {
                 </div>
                 <p>{item.description}</p>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 .header {
-  padding:       24px 0;
+  padding:       8px 0;
   border-bottom: 1px solid #303236;
   position:      fixed;
   z-index:       10;
@@ -7,6 +7,11 @@
   top:           0;
   width:         100%;
   background:    #1F2023;
+  :global {
+    .container {
+      max-width: 1960px;
+    }
+  }
   .content {
     display:         flex;
     align-items:     center;
@@ -21,6 +26,7 @@
       min-width:   130px;
       font-size:   11px;
       font-weight: 600;
+      padding: 8px 8px;
     }
     .info {
       margin-left:     auto;
@@ -28,12 +34,12 @@
       align-items:     center;
       justify-content: flex-end;
       .helpInfo {
-        display: flex;
-        width:   16px;
+        display:      flex;
+        width:        16px;
       }
       .status {
         display:      flex;
-        width:        32px;
+        width:        28px;
         border-left:  2px solid #303236;
         padding-left: 8px;
         margin-left:  8px;
@@ -78,7 +84,6 @@
 
 @media screen and (max-width: 566.98px) {
   .header {
-    padding: 12px 0;
     .content {
       flex-direction: column;
       .logo {

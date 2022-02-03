@@ -1,5 +1,5 @@
 .new {
-  padding: 24px 0;
+  padding: 24px 0 0 0;
   .content {
     display:       flex;
     align-items:   flex-start;
@@ -9,7 +9,7 @@
   .item {
     border-radius:   3px;
     border:          1px solid #303236;
-    padding:         16px;
+    padding:         16px 22px 16px 16px;
     background:      #222326;
     max-width:       321px;
     width:           100%;

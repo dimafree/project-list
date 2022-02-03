@@ -15,7 +15,7 @@ export const NewProject = () => {
       <div className='container'>
         <div className={styles.content}>
           {items.map(item => (
-            <div className={styles.item}>
+            <div key={item.title} className={styles.item}>
               <img className={styles.icon} src={item.image} alt='' />
               <div className={styles.info}>
                 <h4>{item.title}</h4>

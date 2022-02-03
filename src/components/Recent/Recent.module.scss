@@ -1,5 +1,5 @@
 .recent {
-  margin: 24px 0;
+  margin: 36px 0 24px 0;
   .title {
     display:         flex;
     align-items:     center;
@@ -37,6 +37,10 @@
       display:         flex;
       align-items:     center;
       justify-content: flex-start;
+      transition:      .2s linear;
+      &:hover {
+        background: #000;
+      }
       .icon {
         width:           32px;
         height:          32px;
@@ -98,6 +102,10 @@
           }
         }
       }
+    }
+    .notFound {
+      text-align: center;
+      margin:     24px 0;
     }
   }
 }

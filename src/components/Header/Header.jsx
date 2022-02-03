@@ -17,7 +17,7 @@ export const Header = () => {
             <img src={logo} alt='' />
           </a>
           <select name='' id=''>
-            <option value=''>Company name 1</option>
+            <option value=''>Company name</option>
             <option value=''>Company name 2</option>
             <option value=''>Company name 3</option>
           </select>
