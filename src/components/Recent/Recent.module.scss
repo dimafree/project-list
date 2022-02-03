@@ -1,5 +1,5 @@
 .recent {
-  margin: 36px 0 24px 0;
+  margin: 24px 0 24px 0;
   .title {
     display:         flex;
     align-items:     center;
@@ -12,6 +12,8 @@
       .icon {
         width:        16px;
         margin-right: 8px;
+        position:     relative;
+        top:          -2px;
       }
       h3 {
         margin-bottom: 0;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // assets
 import styles from './Recommended.module.scss';
@@ -18,8 +18,10 @@ const items = [
 ];
 
 export const Recommended = () => {
+  const [show, setShow] = useState(true);
+
   return (
-    <section className={styles.recommended}>
+    show && <section className={styles.recommended}>
       <div className='container'>
         <div className={styles.title}>
           <div className={styles.text}>
@@ -33,7 +35,7 @@ export const Recommended = () => {
             <span className={styles.all}>
               View all
             </span>
-            <span className={styles.close}>
+            <span className={styles.close} onClick={() => setShow(false)}>
               <img src={close} alt='' />
             </span>
           </div>
